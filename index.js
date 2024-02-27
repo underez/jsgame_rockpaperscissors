@@ -25,11 +25,11 @@ function pickOption(o) {
         choice = o
         
         if (o == 1) {
-            pedra.classList = "player"
+            rock.classList = "player"
         } else if (o == 2) {
-            papel.classList = "player"
+            paper.classList = "player"
         } else {
-            tesoura.classList = "player"
+            scissors.classList = "player"
         }
         
         if (computerChoice == undefined) {
@@ -40,11 +40,11 @@ function pickOption(o) {
             }
             
             if (computerChoice == 1) {
-                pedra.classList = "computer"
+                rock.classList = "computer"
             } else if (computerChoice == 2) {
-                papel.classList = "computer"
+                paper.classList = "computer"
             } else {
-                tesoura.classList = "computer"
+                scissors.classList = "computer"
             }
         }
         
@@ -85,9 +85,9 @@ function newGame() {
         choice = undefined
         computerChoice = undefined
         
-        pedra.classList = ""
-        papel.classList = ""
-        tesoura.classList = ""
+        rock.classList = ""
+        paper.classList = ""
+        scissors.classList = ""
         
         playerScore.innerHTML = player
         computerScore.innerHTML = computer
